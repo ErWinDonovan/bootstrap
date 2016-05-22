@@ -51,6 +51,10 @@ body {
 	font-family: 'Cuprum', Arial, sans-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 #page {
 	width:960px;
 	margin:0 auto;
@@ -147,4 +151,92 @@ body {
 	position: absolute;
 	top: 92px;
 	right: 0px;
+}
+
+#content {
+	margin-top: 20px;
+}
+
+#content::before, #content::after {
+    content:"";
+    display:table;
+
+}
+#content::after {
+    clear:both;
+}
+#content {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+#article {
+	width: 740px; 
+	padding-left: 20px;
+	float: right;
+	color: #fff;
+	text-align: justify;
+}
+
+#article h1 {
+	font-size: 30px;
+}
+
+#article img {
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+#article p {
+	margin-top: 20px;
+}
+
+.icon {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-image: url(images/sprite.png); 
+	cursor: pointer;
+}
+
+.icon-car {
+	background-position: 0 0;
+}
+
+.icon.icon-car:hover {
+	background-position: 0 -40px;
+}
+
+.icon.icon-check {
+	background-position: -40px 0;
+}
+
+.icon.icon-check:hover {
+	background-position: -40px -40px;
+}
+.icon.icon-buy {
+	background-position: -80px 0;
+}
+
+.icon.icon-buy:hover {
+	background-position: -80px -40px;
+}
+.icon.icon-chat {
+	background-position: -120px 0;
+}
+
+.icon.icon-chat:hover {
+	background-position: -120px -40px;
+}
+
+#sidebar {
+	width: 200px;
+	float: left;
+	color: #fff;
+}
+
+#sidebar a {
+	margin-top: 20px;
+	color: #fff;
+	display: block;
+
 }
